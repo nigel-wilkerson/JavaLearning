@@ -14,8 +14,12 @@ public class VariablesPractice {
         int age = 21;
         double price = 19.99;
         char currency = '$';
-        boolean isStudent;
+        boolean isStudent = true;
 
+        System.out.println(name);
         System.out.println(age);
+        System.out.println(price);
+        System.out.println(currency);
+        System.out.println("I am a student: " + isStudent);
     }
 }
