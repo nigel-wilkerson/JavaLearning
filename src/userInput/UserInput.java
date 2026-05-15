@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class UserInput {
 
     public static void main(String[] args) {
-        // Declaring te variables now so I won't have to do it later
+        // Declaring the variables now so I won't have to do it later
         String name;
         int age;
         double price = 14.99;
@@ -31,7 +31,7 @@ public class UserInput {
 
         System.out.println(age + " years old, got it.");
 
-        System.out.println("I see that you were inquiring about the burgter special, that'll be " + currency + price);
+        System.out.println("I see that you were inquiring about the burger special, that'll be " + currency + price);
 
 
         // Best practice is to always close the scanner
