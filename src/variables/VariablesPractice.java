@@ -17,11 +17,13 @@ public class VariablesPractice {
         double price = 19.99;
         char currency = '$';
         boolean isStudent = true;
+        boolean isTall = false;
 
         System.out.println("My name is " + name);
         System.out.println("I am " + age + " years old");
         System.out.println("The price of my dinner cost me " + currency + price);
         System.out.println("The symbol for the currency usd is " + currency);
         System.out.println("Am I a student? Survey says: " + isStudent);
+        System.out.println("Are you over six feet tall? Survey says: " + isTall);
     }
 }
