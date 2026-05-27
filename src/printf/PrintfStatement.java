@@ -17,6 +17,14 @@ public class PrintfStatement {
 
         // %[flags][width][.precision][specific-character]
 
+        /*
+        Other helpful tips to remember
+        + = output a plus   Ex: +43
+        , = comma grouping separator   Ex: 1,000
+        ( = negative numbers are enclosed in ()   Ex: (-54)
+        space = display a minus if negative, space if positive   Ex:
+         */
+
         String firstName = "Sly";
         String lastName = "Cooper";
         char firstLetter = 'S';
@@ -29,6 +37,8 @@ public class PrintfStatement {
         System.out.printf("Nurse: %s %s thanks for waiting, the price will be $%.2f\n",firstName, lastName, price);
         System.out.printf("Patient: That's a lot, are you sure that $%.2f is the correct price?\n", price);
         System.out.printf("Nurse: Yes the $%.2f is %b.", price, isCorrect);
+
+
 
     }
 }
