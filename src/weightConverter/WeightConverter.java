@@ -6,7 +6,8 @@ import java.util.Scanner;
  * File: WeightConverter.java
  * Version: 1.0
  * Date: 6/17/2026
- * Description:
+ * Description: Menu-driven weight converter that uses if/else logic to convert between pounds
+ *              and kilograms based on user selection
  */
 
 public class WeightConverter {
