@@ -5,7 +5,7 @@ package twoDArrays;
  * File: TwoDArrays.java
  * Version: 1.0
  * Date: 8/5/2026
- * Description:
+ * Description: I used 2D arrays to create a replica phone keypad with the help of enhanced for loops
  */
 
 public class TwoDArrays {
