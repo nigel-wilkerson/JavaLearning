@@ -53,5 +53,10 @@ public class Main {
         car.stopEngine();
         truck.stopEngine();
         motorcycle.stopEngine();
+
+        // Added my toString overridden method
+        System.out.println(car);
+        System.out.println(truck);
+        System.out.println(motorcycle);
     }
 }

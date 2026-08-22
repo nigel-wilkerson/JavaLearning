@@ -36,4 +36,15 @@ public class Vehicle  {
         System.out.println("Year: " + this.year);
         System.out.println("MPG: " + this.mpg);
     }
+    // Override toSTring method
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", mpg=" + mpg +
+                '}';
+    }
+
 }
