@@ -1,25 +1,26 @@
 package madLibs;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 import java.time.LocalDateTime;
 
 /**
  * Name: Nigel Wilkerson
  * File: MadLibs.java
- * Version: 2.0
+ * Version: 3.0
  * Date: 10/9/2026
  * Description: Interactive MadLibs program that collects user input for adjectives, nouns,
- *              and verbs, generates a short story, and saves it to madlibs.txt. Demonstrates
- *              file writing with try-with-resources for automatic resource management.
+ *              and verbs, generates a short story, saves, and reads it back to madlibs.txt.
+ *              Demonstrates file writing with try-with-resources for automatic resource management.
  */
 
 public class MadLibs {
 
     public static void main(String[] args) {
 
+        String fileName= "C:\\Users\\nigel\\OneDrive\\Desktop\\MadLibsTest.txt";
+
         try (Scanner scanner = new Scanner(System.in);
-             FileWriter writer = new FileWriter("madlibs.txt")) {
+             FileWriter writer = new FileWriter(fileName)) {
 
             System.out.println("Enter an adjective (description): ");
             String adjective1 = scanner.nextLine();
@@ -39,6 +40,24 @@ public class MadLibs {
             writer.write("\nI was " + adjective3 + "!\n");
 
             System.out.println("Your MadLibs file has been saved on " + LocalDateTime.now());
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+        }
+        catch (IOException e) {
+            System.out.println("File error: " + e.getMessage());
+        }
+
+        // Created new try statement to read what's in the fileName
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("File not found.");
         }
         catch (IOException e) {
             System.out.println("File error: " + e.getMessage());
